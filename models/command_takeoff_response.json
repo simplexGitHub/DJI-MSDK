@@ -1,0 +1,27 @@
+{
+  "title": "command_takeoff_response",
+  "x-stoplight": {
+    "id": "0m2zw7qwdj475"
+  },
+  "type": "object",
+  "properties": {
+    "command": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "q1wavporgvsm3"
+      }
+    },
+    "id": {
+      "type": "integer",
+      "x-stoplight": {
+        "id": "z5dd5xztftiup"
+      },
+      "minimum": 0,
+      "description": "return id got in request"
+    }
+  },
+  "required": [
+    "command",
+    "id"
+  ]
+}

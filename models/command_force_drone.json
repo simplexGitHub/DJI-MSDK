@@ -1,0 +1,73 @@
+{
+  "title": "command_force_drone",
+  "x-stoplight": {
+    "id": "mcsbqe2cqf2x2"
+  },
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "timestamp"
+    },
+    "command": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "lwmiyjc0xa9w5"
+      }
+    },
+    "velocityAndYawRateCtrl": {
+      "type": "object",
+      "x-stoplight": {
+        "id": "xry7mx1zx74l5"
+      },
+      "required": [
+        "vx",
+        "vy",
+        "vz",
+        "yaw"
+      ],
+      "properties": {
+        "vx": {
+          "type": "number",
+          "x-stoplight": {
+            "id": "lmlu2xp2t5ixo"
+          },
+          "minimum": -15,
+          "maximum": 15,
+          "description": "m/s"
+        },
+        "vy": {
+          "type": "number",
+          "x-stoplight": {
+            "id": "lmlu2xp2t5ixo"
+          },
+          "minimum": -15,
+          "maximum": 15,
+          "description": "m/s"
+        },
+        "vz": {
+          "type": "number",
+          "x-stoplight": {
+            "id": "lmlu2xp2t5ixo"
+          },
+          "minimum": -15,
+          "maximum": 15,
+          "description": "m/s"
+        },
+        "yaw": {
+          "type": "number",
+          "x-stoplight": {
+            "id": "o7wpat3atjf8s"
+          },
+          "description": "rate degree/s"
+        }
+      }
+    }
+  },
+  "required": [
+    "id",
+    "command",
+    "velocityAndYawRateCtrl"
+  ]
+}

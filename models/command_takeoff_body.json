@@ -1,0 +1,30 @@
+{
+  "title": "command_takeoff_body",
+  "x-stoplight": {
+    "id": "2ymd2nxslb8xo"
+  },
+  "type": "object",
+  "properties": {
+    "command": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "teeww01murzff"
+      },
+      "enum": [
+        "takeOff"
+      ]
+    },
+    "id": {
+      "type": "integer",
+      "x-stoplight": {
+        "id": "yex1aclawymcc"
+      },
+      "minimum": 0,
+      "description": "timestamp"
+    }
+  },
+  "required": [
+    "command",
+    "id"
+  ]
+}

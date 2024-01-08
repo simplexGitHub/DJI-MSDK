@@ -99,7 +99,7 @@
           "x-stoplight": {
             "id": "dbm7ec0l716au"
           },
-          "description": "key 50 - Ok, 16 - connected but not ready, 1 - didn't connect\n\n"
+          "description": "0 - no solution\n1 - Position has been fixed by the FIX POSITION command\n2 - Position has been fixed by the FIX HEIGHT/AUTO command\n8 - Velocity computed using instantaneous Doppler\n16 - Single point position\n17 - Pseudorange differential solution\n18 - Solution calculated using corrections from an SBAS\n19 - Propagated by a Kalman filter without new observations\n20 - OmniSTAR VBS position (L1 sub-metre)\n32 - Floating L1 ambiguity solution\n33 - Floating ionospheric-free ambiguity solution\n34 - Floating narrow-lane ambiguity solution\n48 - Integer L1 ambiguity solution\n49 - Integer wide-lane ambiguity solution\n50 - Integer narrow-lane ambiguity solution"
         },
         "statusFlight": {
           "$ref": "./statusFlight.json",

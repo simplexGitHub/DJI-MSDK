@@ -1,0 +1,62 @@
+{
+  "title": "command_gimbal",
+  "x-stoplight": {
+    "id": "19jdvic46vy2n"
+  },
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "number",
+      "minimum": 0,
+      "description": "timestamp"
+    },
+    "command": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "6x9vg7mg82ca9"
+      },
+      "enum": [
+        "force_gimbal"
+      ]
+    },
+    "gimbal": {
+      "type": "object",
+      "x-stoplight": {
+        "id": "w37oift7qolc9"
+      },
+      "required": [
+        "roll",
+        "pitch",
+        "yaw"
+      ],
+      "properties": {
+        "roll": {
+          "type": "number",
+          "x-stoplight": {
+            "id": "o7wdqgtb4nypr"
+          },
+          "description": "degree"
+        },
+        "pitch": {
+          "type": "number",
+          "x-stoplight": {
+            "id": "o7wdqgtb4nypr"
+          },
+          "description": "degree"
+        },
+        "yaw": {
+          "type": "number",
+          "x-stoplight": {
+            "id": "o7wdqgtb4nypr"
+          },
+          "description": "degree"
+        }
+      }
+    }
+  },
+  "required": [
+    "id",
+    "command",
+    "gimbal"
+  ]
+}

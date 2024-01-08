@@ -4,6 +4,7 @@
     "id": "jx7xpgd6sjw12"
   },
   "type": "object",
+  "description": "0- stop, 1 - armed, 2 - takeoff, 3 - fly, 4 - pause, 5 - resume, 6 - landing",
   "properties": {
     "key": {
       "type": "integer",
@@ -28,5 +29,9 @@
         "WAYPOINT"
       ]
     }
-  }
+  },
+  "required": [
+    "key",
+    "value"
+  ]
 }
