@@ -1,0 +1,19 @@
+{
+  "title": "CPPTelemetry",
+  "type": "object",
+  "examples": [
+    {
+      "telemetry": {}
+    }
+  ],
+  "properties": {
+    "telemetry": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

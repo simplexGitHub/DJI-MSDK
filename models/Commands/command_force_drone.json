@@ -69,5 +69,6 @@
     "id",
     "command",
     "velocityAndYawRateCtrl"
-  ]
+  ],
+  "description": ""
 }
