@@ -1,23 +1,23 @@
 {
-  "title": "command_takeoff_response",
+  "title": "command_land_response",
   "x-stoplight": {
-    "id": "0m2zw7qwdj475"
+    "id": "3llwtgaqczm3j"
   },
   "type": "object",
   "properties": {
     "command": {
       "type": "string",
       "x-stoplight": {
-        "id": "q1wavporgvsm3"
+        "id": "khmxxxhpa5tly"
       },
       "enum": [
-        "takeOff"
+        "land"
       ]
     },
     "id": {
       "type": "integer",
       "x-stoplight": {
-        "id": "z5dd5xztftiup"
+        "id": "y9s2ucucvyhsw"
       },
       "minimum": 0,
       "description": "return id got in request"
@@ -25,7 +25,7 @@
     "data": {
       "type": "object",
       "x-stoplight": {
-        "id": "9of6agxfpagz6"
+        "id": "o5yx2mgcjofhh"
       },
       "required": [
         "success",
@@ -35,13 +35,13 @@
         "success": {
           "type": "boolean",
           "x-stoplight": {
-            "id": "qnxw37cc63jqn"
+            "id": "6ukxu7tjb1ncn"
           }
         },
         "description": {
           "type": "string",
           "x-stoplight": {
-            "id": "s4cvjnz8af3vs"
+            "id": "gj19yr00mrjv6"
           },
           "description": "if success=false =>description  why"
         }

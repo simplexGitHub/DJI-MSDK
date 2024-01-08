@@ -27,7 +27,8 @@
       "required": [
         "roll",
         "pitch",
-        "yaw"
+        "yaw",
+        "time"
       ],
       "properties": {
         "roll": {
@@ -50,6 +51,13 @@
             "id": "o7wdqgtb4nypr"
           },
           "description": "degree"
+        },
+        "time": {
+          "type": "integer",
+          "x-stoplight": {
+            "id": "dgs6dtc29hd69"
+          },
+          "description": "muliply 100"
         }
       }
     }

@@ -1,0 +1,36 @@
+{
+  "title": "command_waypoints_upload_body",
+  "x-stoplight": {
+    "id": "j2c7dvll1ikwa"
+  },
+  "type": "object",
+  "properties": {
+    "command": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "ozm5cony4mdqg"
+      },
+      "enum": [
+        "waypoints_upload"
+      ]
+    },
+    "id": {
+      "type": "integer",
+      "x-stoplight": {
+        "id": "tjzxv6t9wlkd2"
+      },
+      "minimum": 0,
+      "description": "timestamp"
+    },
+    "waypointUploadV2": {
+      "type": "object",
+      "x-stoplight": {
+        "id": "eh1vn39rnui5m"
+      }
+    }
+  },
+  "required": [
+    "command",
+    "id"
+  ]
+}

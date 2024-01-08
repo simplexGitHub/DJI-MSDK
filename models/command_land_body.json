@@ -1,0 +1,27 @@
+{
+  "title": "command_land_body",
+  "x-stoplight": {
+    "id": "qi92422r4708c"
+  },
+  "type": "object",
+  "properties": {
+    "command": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "wvr5iha2slcy6"
+      }
+    },
+    "id": {
+      "type": "integer",
+      "x-stoplight": {
+        "id": "w7p6gpzy8ilei"
+      },
+      "minimum": 0,
+      "description": "timestamp"
+    }
+  },
+  "required": [
+    "command",
+    "id"
+  ]
+}
