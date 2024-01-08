@@ -1,0 +1,39 @@
+{
+  "title": "rtkPosition",
+  "x-stoplight": {
+    "id": "tb7efr5wqw1wr"
+  },
+  "type": "object",
+  "properties": {
+    "longitude": {
+      "type": "number",
+      "x-stoplight": {
+        "id": "46lr6eyax69nn"
+      },
+      "minimum": -180,
+      "maximum": 180
+    },
+    "latitude": {
+      "type": "number",
+      "x-stoplight": {
+        "id": "57edj6ty8rcq6"
+      },
+      "minimum": -90,
+      "maximum": 90
+    },
+    "HFSL": {
+      "type": "number",
+      "x-stoplight": {
+        "id": "q3ouen4rq71go"
+      },
+      "minimum": -500,
+      "maximum": 1000,
+      "description": "ASL"
+    }
+  },
+  "required": [
+    "longitude",
+    "latitude",
+    "HFSL"
+  ]
+}

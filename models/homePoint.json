@@ -1,0 +1,29 @@
+{
+  "title": "homePoint",
+  "x-stoplight": {
+    "id": "bf84jk5xr5v7o"
+  },
+  "type": "object",
+  "properties": {
+    "latitude": {
+      "type": "number",
+      "x-stoplight": {
+        "id": "83dkhrsxw13ph"
+      },
+      "minimum": -90,
+      "maximum": 90
+    },
+    "longitude": {
+      "type": "number",
+      "x-stoplight": {
+        "id": "dxmid0k0dgico"
+      },
+      "minimum": -180,
+      "maximum": 180
+    }
+  },
+  "required": [
+    "latitude",
+    "longitude"
+  ]
+}

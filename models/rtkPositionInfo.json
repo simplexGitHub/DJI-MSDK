@@ -1,0 +1,38 @@
+{
+  "title": "rtkPositionInfo",
+  "x-stoplight": {
+    "id": "4mem5iucy5r2c"
+  },
+  "type": "object",
+  "properties": {
+    "key": {
+      "type": "integer",
+      "enum": [
+        1,
+        16,
+        50
+      ],
+      "minimum": 0,
+      "maximum": 50,
+      "x-stoplight": {
+        "id": "g3dkfljin8117"
+      }
+    },
+    "value": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "fznz5dvrgu4j3"
+      },
+      "enum": [
+        "No solution",
+        "Single point position",
+        "Integer narrow-lane ambiguity solution"
+      
+      ]
+    }
+  },
+  "required": [
+    "key",
+    "value"
+  ]
+}

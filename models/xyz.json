@@ -1,0 +1,32 @@
+{
+  "title": "xyz",
+  "x-stoplight": {
+    "id": "tbnvnlra4bueq"
+  },
+  "type": "object",
+  "properties": {
+    "x": {
+      "type": "number",
+      "x-stoplight": {
+        "id": "otj39r4o63mva"
+      }
+    },
+    "y": {
+      "type": "number",
+      "x-stoplight": {
+        "id": "y7ymq7wa58xaa"
+      }
+    },
+    "z": {
+      "type": "number",
+      "x-stoplight": {
+        "id": "r1n0ds62u8f0j"
+      }
+    }
+  },
+  "required": [
+    "x",
+    "y",
+    "z"
+  ]
+}

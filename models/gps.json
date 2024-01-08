@@ -1,0 +1,48 @@
+{
+  "title": "gps",
+  "x-stoplight": {
+    "id": "jmkieris5uhnf"
+  },
+  "type": "object",
+  "properties": {
+    "longitude": {
+      "type": "number",
+      "x-stoplight": {
+        "id": "46lr6eyax69nn"
+      },
+      "minimum": -180,
+      "maximum": 180
+    },
+    "latitude": {
+      "type": "number",
+      "x-stoplight": {
+        "id": "57edj6ty8rcq6"
+      },
+      "minimum": -90,
+      "maximum": 90
+    },
+    "altitude": {
+      "type": "number",
+      "x-stoplight": {
+        "id": "q3ouen4rq71go"
+      },
+      "minimum": -500,
+      "maximum": 1000,
+      "description": "ASL"
+    },
+    "visibleSatelliteNumber": {
+      "type": "integer",
+      "x-stoplight": {
+        "id": "9wyrcae1xyi1z"
+      },
+      "minimum": 0,
+      "maximum": 1000
+    }
+  },
+  "required": [
+    "longitude",
+    "latitude",
+    "altitude",
+    "visibleSatelliteNumber"
+  ]
+}

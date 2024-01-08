@@ -1,0 +1,56 @@
+{
+  "title": "rcWithFlagData",
+  "x-stoplight": {
+    "id": "fw87zv9amqh8h"
+  },
+  "type": "object",
+  "properties": {
+    "flag": {
+      "type": "object",
+      "x-stoplight": {
+        "id": "5ljs9ogajpt4s"
+      },
+      "required": [
+        "groundConnected",
+        "appConnected",
+        "logicConnected",
+        "skyConnected"
+      ],
+      "properties": {
+        "groundConnected": {
+          "type": "integer",
+          "x-stoplight": {
+            "id": "dsi2tntdclhfh"
+          },
+          "minimum": 0,
+          "maximum": 1
+        },
+        "appConnected": {
+          "type": "integer",
+          "x-stoplight": {
+            "id": "bmz8deduqrp44"
+          },
+          "minimum": 0,
+          "maximum": 1
+        },
+        "logicConnected": {
+          "type": "integer",
+          "x-stoplight": {
+            "id": "183btx2n6f1n7"
+          }
+        },
+        "skyConnected": {
+          "type": "integer",
+          "x-stoplight": {
+            "id": "rjmtuxu72lohw"
+          },
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    }
+  },
+  "required": [
+    "flag"
+  ]
+}

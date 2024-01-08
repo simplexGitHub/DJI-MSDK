@@ -1,0 +1,45 @@
+{
+  "title": "battery",
+  "x-stoplight": {
+    "id": "de047xuxx1zxf"
+  },
+  "type": "object",
+  "properties": {
+    "capacity": {
+      "type": "integer",
+      "x-stoplight": {
+        "id": "zc1e83spq7yx6"
+      },
+      "minimum": 0,
+      "description": "multiply 1000"
+    },
+    "current": {
+      "type": "integer",
+      "x-stoplight": {
+        "id": "1753ezb400ljx"
+      },
+      "minimum": 0,
+      "description": "multiply 1000"
+    },
+    "percentage": {
+      "type": "integer",
+      "x-stoplight": {
+        "id": "40gv0vx1hkjbj"
+      },
+      "description": "multiply 1000"
+    },
+    "voltage": {
+      "type": "integer",
+      "x-stoplight": {
+        "id": "hwysbovivlh46"
+      },
+      "description": "multiply 1000"
+    }
+  },
+  "required": [
+    "capacity",
+    "current",
+    "percentage",
+    "voltage"
+  ]
+}

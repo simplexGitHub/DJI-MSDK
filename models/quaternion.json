@@ -1,0 +1,51 @@
+{
+  "title": "quaternion",
+  "x-stoplight": {
+    "id": "q5hcybes37lg9"
+  },
+  "type": "object",
+  "properties": {
+    "q0": {
+      "type": "number",
+      "x-stoplight": {
+        "id": "vg2aw9z2i5jtn"
+      },
+      "minimum": -6.28,
+      "maximum": 6.28,
+      "description": "rad"
+    },
+    "q1": {
+      "type": "number",
+      "x-stoplight": {
+        "id": "p5erp8q9rfdb2"
+      },
+      "minimum": -6.28,
+      "maximum": 6.28,
+      "description": "rad"
+    },
+    "q2": {
+      "type": "number",
+      "x-stoplight": {
+        "id": "fqpwop8s3n1sy"
+      },
+      "minimum": -6.28,
+      "maximum": 6.28,
+      "description": "rad"
+    },
+    "q3": {
+      "type": "number",
+      "x-stoplight": {
+        "id": "wgb0curv8pim8"
+      },
+      "minimum": -6.28,
+      "maximum": 6.28,
+      "description": "rad"
+    }
+  },
+  "required": [
+    "q0",
+    "q1",
+    "q2",
+    "q3"
+  ]
+}

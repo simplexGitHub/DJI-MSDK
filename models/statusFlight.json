@@ -1,0 +1,32 @@
+{
+  "title": "statusFlight",
+  "x-stoplight": {
+    "id": "jx7xpgd6sjw12"
+  },
+  "type": "object",
+  "properties": {
+    "key": {
+      "type": "integer",
+      "x-stoplight": {
+        "id": "xzz5lu7n8nmov"
+      },
+      "minimum": 0,
+      "enum": [
+        0,
+        1,
+        2
+      ]
+    },
+    "value": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "wvgouhzuss697"
+      },
+      "enum": [
+        "STOP",
+        "FLIGHT",
+        "WAYPOINT"
+      ]
+    }
+  }
+}

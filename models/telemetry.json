@@ -5,11 +5,52 @@
   },
   "type": "object",
   "properties": {
+    "homePointSetStatus": {
+      "type": "object",
+      "x-stoplight": {
+        "id": "xtdligu1jdco5"
+      },
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "status": {
+          "type": "integer",
+          "x-stoplight": {
+            "id": "0ahmkcnu0lwo7"
+          },
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    },
     "telemetry": {
       "type": "object",
       "x-stoplight": {
         "id": "25fwc1xlw2t1w"
       },
+      "required": [
+        "id",
+        "droneType",
+        "sn",
+        "zoomValue",
+        "heightHomepoint",
+        "gimbalAngles",
+        "gps",
+        "rtkPosition",
+        "rtkPositionInfo",
+        "statusFlight",
+        "battery",
+        "gpsSignalLevel",
+        "quaternion",
+        "velocity",
+        "altitudeFusioned",
+        "altitudeBarometer",
+        "rcWithFlagData",
+        "rtkConnectStatus",
+        "homePointInfo",
+        "date"
+      ],
       "properties": {
         "id": {
           "type": "integer",
@@ -51,15 +92,138 @@
             "id": "8xgv2oewpsat7"
           },
           "description": "homepoint above see level\n"
+        },
+        "gimbalAngles": {
+          "$ref": "./gimbalAngles.json",
+          "x-stoplight": {
+            "id": "mfna1rmk6qr8i"
+          }
+        },
+        "gps": {
+          "$ref": "./gps.json",
+          "x-stoplight": {
+            "id": "56wzigl5umw3v"
+          }
+        },
+        "rtkPosition": {
+          "$ref": "./rtkPosition.json",
+          "x-stoplight": {
+            "id": "k135vvpwbk263"
+          },
+          "description": "if exist"
+        },
+        "rtkPositionInfo": {
+          "$ref": "./rtkPositionInfo.json",
+          "x-stoplight": {
+            "id": "dbm7ec0l716au"
+          },
+          "description": "key 50 - Ok, 16 - connected but not ready, 1 - didn't connect\n\n"
+        },
+        "statusFlight": {
+          "$ref": "./statusFlight.json",
+          "x-stoplight": {
+            "id": "s3yxgoylczoyv"
+          }
+        },
+        "battery": {
+          "$ref": "./battery.json",
+          "x-stoplight": {
+            "id": "129d6lc6sj7js"
+          }
+        },
+        "gpsSignalLevel": {
+          "type": "integer",
+          "x-stoplight": {
+            "id": "af3cbgqfjrby6"
+          },
+          "minimum": 0,
+          "maximum": 5,
+          "description": "less 3 poor"
+        },
+        "quaternion": {
+          "$ref": "./quaternion.json",
+          "x-stoplight": {
+            "id": "fxoxqi3771wng"
+          }
+        },
+        "velocity": {
+          "type": "object",
+          "x-stoplight": {
+            "id": "y8vzlo387tclz"
+          },
+          "description": "m/s",
+          "required": [
+            "data"
+          ],
+          "properties": {
+            "data": {
+              "$ref": "./xyz.json",
+              "x-stoplight": {
+                "id": "62s05ar9uynp3"
+              }
+            }
+          }
+        },
+        "altitudeFusioned": {
+          "type": "number",
+          "x-stoplight": {
+            "id": "al6qag95gq47g"
+          },
+          "minimum": -500,
+          "maximum": 10000,
+          "description": "fused ASL"
+        },
+        "altitudeBarometer": {
+          "type": "number",
+          "x-stoplight": {
+            "id": "tc8ctxgkrtcup"
+          }
+        },
+        "rcWithFlagData": {
+          "$ref": "./rcWithFlagData.json",
+          "x-stoplight": {
+            "id": "838fl18rs4t21"
+          }
+        },
+        "rtkConnectStatus": {
+          "type": "object",
+          "x-stoplight": {
+            "id": "974yy9bypgtkf"
+          },
+          "required": [
+            "rtkConnected"
+          ],
+          "properties": {
+            "rtkConnected": {
+              "type": "integer",
+              "x-stoplight": {
+                "id": "jxjh4o616zjq0"
+              },
+              "minimum": 0,
+              "maximum": 1,
+              "description": "device conneceted\n"
+            }
+          }
+        },
+        "homePointInfo": {
+          "$ref": "./homePoint.json",
+          "x-stoplight": {
+            "id": "xlie9efkvzxeg"
+          }
+        },
+        "date": {
+          "type": "string",
+          "x-stoplight": {
+            "id": "2chvokwlpugck"
+          },
+          "format": "date-time",
+          "example": "2023-10-04T14:12:33.079Z"
         }
-      },
-      "required": [
-        "id",
-        "droneType",
-        "sn",
-        "zoomValue",
-        "heightHomepoint"
-      ]
+      }
     }
-  }
+  },
+  "required": [
+    "homePointSetStatus",
+    "telemetry"
+  ]
 }
