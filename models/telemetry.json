@@ -5,25 +5,6 @@
   },
   "type": "object",
   "properties": {
-    "homePointSetStatus": {
-      "type": "object",
-      "x-stoplight": {
-        "id": "xtdligu1jdco5"
-      },
-      "required": [
-        "status"
-      ],
-      "properties": {
-        "status": {
-          "type": "integer",
-          "x-stoplight": {
-            "id": "0ahmkcnu0lwo7"
-          },
-          "minimum": 0,
-          "maximum": 1
-        }
-      }
-    },
     "telemetry": {
       "type": "object",
       "x-stoplight": {
@@ -49,6 +30,7 @@
         "rcWithFlagData",
         "rtkConnectStatus",
         "homePointInfo",
+        "homePointSetStatus",
         "date"
       ],
       "properties": {
@@ -211,6 +193,25 @@
             "id": "xlie9efkvzxeg"
           }
         },
+        "homePointSetStatus": {
+          "type": "object",
+          "x-stoplight": {
+            "id": "xtdligu1jdco5"
+          },
+          "required": [
+            "status"
+          ],
+          "properties": {
+            "status": {
+              "type": "integer",
+              "x-stoplight": {
+                "id": "0ahmkcnu0lwo7"
+              },
+              "minimum": 0,
+              "maximum": 1
+            }
+          }
+        },
         "date": {
           "type": "string",
           "x-stoplight": {
@@ -223,7 +224,6 @@
     }
   },
   "required": [
-    "homePointSetStatus",
     "telemetry"
   ]
 }
