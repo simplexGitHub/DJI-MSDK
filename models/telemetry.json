@@ -5,10 +5,60 @@
   },
   "type": "object",
   "properties": {
-    "id": {
-      "type": "string",
-      "enum": [
-        "i"
+    "telemetry": {
+      "type": "object",
+      "x-stoplight": {
+        "id": "25fwc1xlw2t1w"
+      },
+      "properties": {
+        "id": {
+          "type": "integer",
+          "x-stoplight": {
+            "id": "10pd32abbfwtj"
+          },
+          "description": "timestamp",
+          "minimum": 1
+        },
+        "droneType": {
+          "type": "string",
+          "x-stoplight": {
+            "id": "sd3yr7ptgmvhd"
+          },
+          "enum": [
+            "M300",
+            "M30",
+            "M350"
+          ],
+          "description": "drone type \n"
+        },
+        "sn": {
+          "type": "string",
+          "x-stoplight": {
+            "id": "0hz7gvoq0bqjr"
+          },
+          "description": "serial number of drone or drone id\n"
+        },
+        "zoomValue": {
+          "type": "number",
+          "x-stoplight": {
+            "id": "8kypvrwxsef0x"
+          },
+          "minimum": 0
+        },
+        "heightHomepoint": {
+          "type": "number",
+          "x-stoplight": {
+            "id": "8xgv2oewpsat7"
+          },
+          "description": "homepoint above see level\n"
+        }
+      },
+      "required": [
+        "id",
+        "droneType",
+        "sn",
+        "zoomValue",
+        "heightHomepoint"
       ]
     }
   }

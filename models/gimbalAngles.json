@@ -1,0 +1,41 @@
+{
+  "title": "gimbalAngles",
+  "x-stoplight": {
+    "id": "exkhz0oc9kpgl"
+  },
+  "type": "object",
+  "properties": {
+    "x": {
+      "type": "number",
+      "x-stoplight": {
+        "id": "z4n3ifovql7ee"
+      },
+      "description": "yaw in Degrees ",
+      "minimum": -360,
+      "maximum": 360
+    },
+    "y": {
+      "type": "number",
+      "x-stoplight": {
+        "id": "nphae3dbjttjs"
+      },
+      "minimum": -180,
+      "maximum": 180,
+      "description": "roll in degree "
+    },
+    "z": {
+      "type": "number",
+      "x-stoplight": {
+        "id": "2xy1wppcnyhwe"
+      },
+      "minimum": -180,
+      "maximum": 180,
+      "description": "pitch in degree "
+    }
+  },
+  "required": [
+    "x",
+    "y",
+    "z"
+  ]
+}
