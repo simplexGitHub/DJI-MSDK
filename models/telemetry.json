@@ -1,0 +1,12 @@
+{
+  "title": "telemetry",
+  "x-stoplight": {
+    "id": "ztnlx8a9rhour"
+  },
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    }
+  }
+}
