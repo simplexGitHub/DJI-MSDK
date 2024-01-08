@@ -43,7 +43,8 @@
           "x-stoplight": {
             "id": "gj19yr00mrjv6"
           },
-          "description": "if success=false =>description  why"
+          "description": "if success=false =>description  why",
+          "example": "already disarmed"
         }
       }
     }
