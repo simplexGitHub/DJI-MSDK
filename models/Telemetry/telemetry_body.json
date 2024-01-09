@@ -30,11 +30,11 @@
         },
         "rtkPositionInfo": {
           "key": 1,
-          "value": "No solution"
+          "value": "no solution"
         },
         "statusFlight": {
           "key": 0,
-          "value": "STOP"
+          "value": "stop"
         },
         "battery": {
           "capacity": 0,
