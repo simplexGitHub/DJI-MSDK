@@ -28,13 +28,13 @@
         "id": "wvgouhzuss697"
       },
       "enum": [
-        "STOP",
-        "ARMED",
-        "TAKEOFF",
-        "FLY",
-        "PAUSE",
-        "RESUME",
-        "LANDING"
+        "stop",
+        "armed",
+        "takeoff",
+        "fly",
+        "pause",
+        "resume",
+        "landing"
       ]
     }
   },
