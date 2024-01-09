@@ -237,7 +237,9 @@
           "type": "number",
           "x-stoplight": {
             "id": "tc8ctxgkrtcup"
-          }
+          },
+          "minimum": -5000,
+          "maximum": 10000
         },
         "rcWithFlagData": {
           "$ref": "./rcWithFlagData.json",
