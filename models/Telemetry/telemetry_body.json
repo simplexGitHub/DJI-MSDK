@@ -4,6 +4,82 @@
     "id": "ztnlx8a9rhour"
   },
   "type": "object",
+  "examples": [
+    {
+      "telemetry": {
+        "id": 1,
+        "droneType": "M300",
+        "sn": "string",
+        "zoomValue": 0,
+        "heightHomepoint": 0,
+        "gimbalAngles": {
+          "x": -360,
+          "y": -180,
+          "z": -180
+        },
+        "gps": {
+          "longitude": -180,
+          "latitude": -90,
+          "altitude": -500,
+          "visibleSatelliteNumber": 0
+        },
+        "rtkPosition": {
+          "longitude": -180,
+          "latitude": -90,
+          "HFSL": -500
+        },
+        "rtkPositionInfo": {
+          "key": 1,
+          "value": "No solution"
+        },
+        "statusFlight": {
+          "key": 0,
+          "value": "STOP"
+        },
+        "battery": {
+          "capacity": 0,
+          "current": 0,
+          "percentage": 0,
+          "voltage": 0
+        },
+        "gpsSignalLevel": 0,
+        "quaternion": {
+          "q0": -6.28,
+          "q1": -6.28,
+          "q2": -6.28,
+          "q3": -6.28
+        },
+        "velocity": {
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "altitudeFusioned": -500,
+        "altitudeBarometer": 0,
+        "rcWithFlagData": {
+          "flag": {
+            "groundConnected": 0,
+            "appConnected": 0,
+            "logicConnected": 0,
+            "skyConnected": 0
+          }
+        },
+        "rtkConnectStatus": {
+          "rtkConnected": 0
+        },
+        "homePointInfo": {
+          "latitude": -90,
+          "longitude": -180
+        },
+        "homePointSetStatus": {
+          "status": 0
+        },
+        "date": "2023-10-04T14:12:33.079Z"
+      }
+    }
+  ],
   "properties": {
     "telemetry": {
       "type": "object",
@@ -73,7 +149,9 @@
           "x-stoplight": {
             "id": "8xgv2oewpsat7"
           },
-          "description": "homepoint above see level\n"
+          "description": "homepoint above see level\n",
+          "minimum": -500,
+          "maximum": 10000
         },
         "gimbalAngles": {
           "$ref": "./gimbalAngles.json",
@@ -225,81 +303,5 @@
   },
   "required": [
     "telemetry"
-  ],
-  "examples": [
-    {
-      "telemetry": {
-        "id": 1,
-        "droneType": "M300",
-        "sn": "string",
-        "zoomValue": 0,
-        "heightHomepoint": 0,
-        "gimbalAngles": {
-          "x": -360,
-          "y": -180,
-          "z": -180
-        },
-        "gps": {
-          "longitude": -180,
-          "latitude": -90,
-          "altitude": -500,
-          "visibleSatelliteNumber": 0
-        },
-        "rtkPosition": {
-          "longitude": -180,
-          "latitude": -90,
-          "HFSL": -500
-        },
-        "rtkPositionInfo": {
-          "key": 1,
-          "value": "No solution"
-        },
-        "statusFlight": {
-          "key": 0,
-          "value": "STOP"
-        },
-        "battery": {
-          "capacity": 0,
-          "current": 0,
-          "percentage": 0,
-          "voltage": 0
-        },
-        "gpsSignalLevel": 0,
-        "quaternion": {
-          "q0": -6.28,
-          "q1": -6.28,
-          "q2": -6.28,
-          "q3": -6.28
-        },
-        "velocity": {
-          "data": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          }
-        },
-        "altitudeFusioned": -500,
-        "altitudeBarometer": 0,
-        "rcWithFlagData": {
-          "flag": {
-            "groundConnected": 0,
-            "appConnected": 0,
-            "logicConnected": 0,
-            "skyConnected": 0
-          }
-        },
-        "rtkConnectStatus": {
-          "rtkConnected": 0
-        },
-        "homePointInfo": {
-          "latitude": -90,
-          "longitude": -180
-        },
-        "homePointSetStatus": {
-          "status": 0
-        },
-        "date": "2023-10-04T14:12:33.079Z"
-      }
-    }
   ]
 }
