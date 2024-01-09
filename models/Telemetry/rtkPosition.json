@@ -27,7 +27,7 @@
         "id": "q3ouen4rq71go"
       },
       "minimum": -500,
-      "maximum": 1000,
+      "maximum": 10000,
       "description": "ASL"
     }
   },
