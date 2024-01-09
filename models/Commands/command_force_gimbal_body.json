@@ -1,0 +1,84 @@
+{
+  "title": "command_force_gimbal_body",
+  "x-stoplight": {
+    "id": "19jdvic46vy2n"
+  },
+  "type": "object",
+  "properties": {
+    "command": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "6x9vg7mg82ca9"
+      },
+      "enum": [
+        "force_gimbal"
+      ]
+    },
+    "data": {
+      "type": "object",
+      "x-stoplight": {
+        "id": "nri1eq51y9em9"
+      },
+      "required": [
+        "id",
+        "gimbal"
+      ],
+      "properties": {
+        "id": {
+          "type": "number",
+          "minimum": 0,
+          "description": "timestamp",
+          "x-stoplight": {
+            "id": "da3yzg1v1yqko"
+          }
+        },
+        "gimbal": {
+          "type": "object",
+          "x-stoplight": {
+            "id": "w37oift7qolc9"
+          },
+          "required": [
+            "roll",
+            "pitch",
+            "yaw",
+            "time"
+          ],
+          "properties": {
+            "roll": {
+              "type": "number",
+              "x-stoplight": {
+                "id": "o7wdqgtb4nypr"
+              },
+              "description": "degree"
+            },
+            "pitch": {
+              "type": "number",
+              "x-stoplight": {
+                "id": "o7wdqgtb4nypr"
+              },
+              "description": "degree"
+            },
+            "yaw": {
+              "type": "number",
+              "x-stoplight": {
+                "id": "o7wdqgtb4nypr"
+              },
+              "description": "degree"
+            },
+            "time": {
+              "type": "integer",
+              "x-stoplight": {
+                "id": "dgs6dtc29hd69"
+              },
+              "description": "muliply 100"
+            }
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "command",
+    "data"
+  ]
+}

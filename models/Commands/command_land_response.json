@@ -5,53 +5,73 @@
   },
   "type": "object",
   "properties": {
-    "command": {
-      "type": "string",
-      "x-stoplight": {
-        "id": "khmxxxhpa5tly"
-      },
-      "enum": [
-        "land"
-      ]
-    },
-    "id": {
-      "type": "integer",
-      "x-stoplight": {
-        "id": "y9s2ucucvyhsw"
-      },
-      "minimum": 0,
-      "description": "return id got in request"
-    },
-    "data": {
+    "ack": {
       "type": "object",
       "x-stoplight": {
-        "id": "o5yx2mgcjofhh"
+        "id": "lm1m172ueoavc"
       },
       "required": [
-        "success",
-        "description"
+        "type",
+        "id",
+        "name",
+        "data"
       ],
       "properties": {
-        "success": {
-          "type": "boolean",
-          "x-stoplight": {
-            "id": "6ukxu7tjb1ncn"
-          }
-        },
-        "description": {
+        "type": {
           "type": "string",
           "x-stoplight": {
-            "id": "gj19yr00mrjv6"
+            "id": "8b0oevgbcotuz"
           },
-          "description": "if success=false =>description  why",
-          "example": "already disarmed"
+          "enum": [
+            "command"
+          ]
+        },
+        "id": {
+          "type": "integer",
+          "x-stoplight": {
+            "id": "ycprjyjzptt3t"
+          },
+          "minimum": 0
+        },
+        "name": {
+          "type": "string",
+          "x-stoplight": {
+            "id": "8ofd0ppxnf5wv"
+          },
+          "enum": [
+            "land"
+          ]
+        },
+        "data": {
+          "type": "object",
+          "x-stoplight": {
+            "id": "o5yx2mgcjofhh"
+          },
+          "required": [
+            "success",
+            "description"
+          ],
+          "properties": {
+            "success": {
+              "type": "boolean",
+              "x-stoplight": {
+                "id": "6ukxu7tjb1ncn"
+              }
+            },
+            "description": {
+              "type": "string",
+              "x-stoplight": {
+                "id": "gj19yr00mrjv6"
+              },
+              "description": "if success=false =>description  why",
+              "example": "already disarmed"
+            }
+          }
         }
       }
     }
   },
   "required": [
-    "command",
-    "id",
-    "data"
+    "ack"
   ]
 }

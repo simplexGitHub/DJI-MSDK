@@ -1,0 +1,40 @@
+{
+  "title": "telemetry_response",
+  "x-stoplight": {
+    "id": "1bl8bx7mnei7r"
+  },
+  "type": "object",
+  "properties": {
+    "ack": {
+      "type": "object",
+      "x-stoplight": {
+        "id": "5rgbkm3icqa5f"
+      },
+      "required": [
+        "id",
+        "type"
+      ],
+      "properties": {
+        "id": {
+          "type": "integer",
+          "x-stoplight": {
+            "id": "4wn5oznsjresb"
+          },
+          "minimum": 0
+        },
+        "type": {
+          "type": "string",
+          "x-stoplight": {
+            "id": "ef8tfeysqqpsa"
+          },
+          "enum": [
+            "telemetry"
+          ]
+        }
+      }
+    }
+  },
+  "required": [
+    "ack"
+  ]
+}

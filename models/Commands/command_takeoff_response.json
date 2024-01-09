@@ -1,56 +1,77 @@
 {
   "title": "command_takeoff_response",
   "x-stoplight": {
-    "id": "0m2zw7qwdj475"
+    "id": "mqxtxncnkc1js"
   },
   "type": "object",
   "properties": {
-    "command": {
-      "type": "string",
-      "x-stoplight": {
-        "id": "q1wavporgvsm3"
-      },
-      "enum": [
-        "takeOff"
-      ]
-    },
-    "id": {
-      "type": "integer",
-      "x-stoplight": {
-        "id": "z5dd5xztftiup"
-      },
-      "minimum": 0,
-      "description": "return id got in request"
-    },
-    "data": {
+    "ack": {
       "type": "object",
       "x-stoplight": {
-        "id": "9of6agxfpagz6"
+        "id": "9uzpu05kqrwrz"
       },
       "required": [
-        "success",
-        "description"
+        "type",
+        "id",
+        "name",
+        "data"
       ],
       "properties": {
-        "success": {
-          "type": "boolean",
-          "x-stoplight": {
-            "id": "qnxw37cc63jqn"
-          }
-        },
-        "description": {
+        "type": {
           "type": "string",
           "x-stoplight": {
-            "id": "s4cvjnz8af3vs"
+            "id": "sezhvi3bxni9u"
           },
-          "description": "if success=false =>description  why"
+          "enum": [
+            "command"
+          ]
+        },
+        "id": {
+          "type": "integer",
+          "x-stoplight": {
+            "id": "60v02ee9c6r8t"
+          },
+          "minimum": 0
+        },
+        "name": {
+          "type": "string",
+          "x-stoplight": {
+            "id": "foza9a4k4nety"
+          },
+          "enum": [
+            "takeoff"
+          ]
+        },
+        "data": {
+          "type": "object",
+          "x-stoplight": {
+            "id": "24sfx5bc7s6o1"
+          },
+          "required": [
+            "success",
+            "description"
+          ],
+          "properties": {
+            "success": {
+              "type": "boolean",
+              "x-stoplight": {
+                "id": "vogc8ybxej53j"
+              }
+            },
+            "description": {
+              "type": "string",
+              "x-stoplight": {
+                "id": "1nm9khjds0z4f"
+              },
+              "description": "if success=false =>description  why",
+              "example": "already disarmed"
+            }
+          }
         }
       }
     }
   },
   "required": [
-    "command",
-    "id",
-    "data"
+    "ack"
   ]
 }

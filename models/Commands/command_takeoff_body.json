@@ -14,17 +14,28 @@
         "takeOff"
       ]
     },
-    "id": {
-      "type": "integer",
+    "data": {
+      "type": "object",
       "x-stoplight": {
-        "id": "yex1aclawymcc"
+        "id": "56n2lxk6jk3jw"
       },
-      "minimum": 0,
-      "description": "timestamp"
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "integer",
+          "x-stoplight": {
+            "id": "yex1aclawymcc"
+          },
+          "minimum": 0,
+          "description": "timestamp"
+        }
+      }
     }
   },
   "required": [
     "command",
-    "id"
+    "data"
   ]
 }

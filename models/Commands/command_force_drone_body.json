@@ -1,0 +1,90 @@
+{
+  "title": "command_force_drone_body",
+  "x-stoplight": {
+    "id": "najse4lig030s"
+  },
+  "type": "object",
+  "properties": {
+    "command": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "mrk8cwtk5sjcr"
+      },
+      "enum": [
+        "force_drone"
+      ]
+    },
+    "data": {
+      "type": "object",
+      "x-stoplight": {
+        "id": "pd48eek6wh3c0"
+      },
+      "required": [
+        "id",
+        "velocityAndYawRateCtrl"
+      ],
+      "properties": {
+        "id": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "timestamp",
+          "x-stoplight": {
+            "id": "508fqj1ahtnkv"
+          }
+        },
+        "velocityAndYawRateCtrl": {
+          "type": "object",
+          "x-stoplight": {
+            "id": "xry7mx1zx74l5"
+          },
+          "required": [
+            "vx",
+            "vy",
+            "vz",
+            "yaw"
+          ],
+          "properties": {
+            "vx": {
+              "type": "number",
+              "x-stoplight": {
+                "id": "lmlu2xp2t5ixo"
+              },
+              "minimum": -15,
+              "maximum": 15,
+              "description": "m/s"
+            },
+            "vy": {
+              "type": "number",
+              "x-stoplight": {
+                "id": "lmlu2xp2t5ixo"
+              },
+              "minimum": -15,
+              "maximum": 15,
+              "description": "m/s"
+            },
+            "vz": {
+              "type": "number",
+              "x-stoplight": {
+                "id": "lmlu2xp2t5ixo"
+              },
+              "minimum": -15,
+              "maximum": 15,
+              "description": "m/s"
+            },
+            "yaw": {
+              "type": "number",
+              "x-stoplight": {
+                "id": "o7wpat3atjf8s"
+              },
+              "description": "rate degree/s"
+            }
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "command",
+    "data"
+  ]
+}

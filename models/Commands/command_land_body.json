@@ -1,27 +1,41 @@
 {
   "title": "command_land_body",
   "x-stoplight": {
-    "id": "qi92422r4708c"
+    "id": "njgtqa87b0ul5"
   },
   "type": "object",
   "properties": {
     "command": {
       "type": "string",
       "x-stoplight": {
-        "id": "wvr5iha2slcy6"
-      }
-    },
-    "id": {
-      "type": "integer",
-      "x-stoplight": {
-        "id": "w7p6gpzy8ilei"
+        "id": "vu8djze0tr1wg"
       },
-      "minimum": 0,
-      "description": "timestamp"
+      "enum": [
+        "land"
+      ]
+    },
+    "data": {
+      "type": "object",
+      "x-stoplight": {
+        "id": "r8lj0m1jlel61"
+      },
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "integer",
+          "x-stoplight": {
+            "id": "h6r4i35ueqi3o"
+          },
+          "minimum": 0,
+          "description": "timestamp"
+        }
+      }
     }
   },
   "required": [
     "command",
-    "id"
+    "data"
   ]
 }
