@@ -211,7 +211,7 @@
           "x-stoplight": {
             "id": "y8vzlo387tclz"
           },
-          "description": "m/s",
+          "description": "x axis positive: North\nY axis positive: East \nThen using right hand rule, Z axis positive is down m/s",
           "required": [
             "data"
           ],
@@ -220,7 +220,8 @@
               "$ref": "./xyz.json",
               "x-stoplight": {
                 "id": "62s05ar9uynp3"
-              }
+              },
+              "description": "x axis positive: North\nY axis positive: East \nZ axis positive: Down"
             }
           }
         },

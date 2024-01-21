@@ -4,7 +4,7 @@
     "id": "jx7xpgd6sjw12"
   },
   "type": "object",
-  "description": "0- stop, 1 - armed, 2 - takeoff, 3 - fly, 4 - pause, 5 - resume, 6 - landing",
+  "description": "0- stop, 1 - fly",
   "properties": {
     "key": {
       "type": "integer",
@@ -14,12 +14,7 @@
       "minimum": 0,
       "enum": [
         0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        1
       ]
     },
     "value": {
@@ -29,12 +24,7 @@
       },
       "enum": [
         "stop",
-        "armed",
-        "takeoff",
-        "fly",
-        "pause",
-        "resume",
-        "landing"
+        "fly"
       ]
     }
   },
