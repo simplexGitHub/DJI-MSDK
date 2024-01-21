@@ -285,10 +285,18 @@
           }
         },
         "mode_rc": {
-          "$ref": "./mode_RC_switch.json",
           "x-stoplight": {
             "id": "gt0uxsl3761z2"
-          }
+          },
+          "type": "string",
+          "enum": [
+            "p",
+            "s",
+            "t",
+            "n",
+            "c",
+            "i"
+          ]
         },
         "date": {
           "type": "string",
