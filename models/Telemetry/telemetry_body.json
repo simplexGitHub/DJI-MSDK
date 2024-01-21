@@ -91,7 +91,6 @@
         "droneType",
         "sn",
         "zoomValue",
-        "heightHomepoint",
         "gimbalAngles",
         "gps",
         "rtkPosition",
@@ -107,6 +106,7 @@
         "rtkConnectStatus",
         "homePointInfo",
         "homePointSetStatus",
+        "mode_rc",
         "date"
       ],
       "properties": {
@@ -143,15 +143,6 @@
             "id": "8kypvrwxsef0x"
           },
           "minimum": 0
-        },
-        "heightHomepoint": {
-          "type": "number",
-          "x-stoplight": {
-            "id": "8xgv2oewpsat7"
-          },
-          "description": "homepoint above see level\n",
-          "minimum": -500,
-          "maximum": 10000
         },
         "gimbalAngles": {
           "$ref": "./gimbalAngles.json",
@@ -291,6 +282,12 @@
               "minimum": 0,
               "maximum": 1
             }
+          }
+        },
+        "mode_rc": {
+          "$ref": "./mode_RC_switch.json",
+          "x-stoplight": {
+            "id": "gt0uxsl3761z2"
           }
         },
         "date": {

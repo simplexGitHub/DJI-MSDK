@@ -1,0 +1,22 @@
+{
+  "title": "mode_RC",
+  "x-stoplight": {
+    "id": "prgf98sf4y6io"
+  },
+  "type": "object",
+  "properties": {
+    "": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "0mvfn6tr6g1jv"
+      },
+      "enum": [
+        "p",
+        "t",
+        "s",
+        "i",
+        "n"
+      ]
+    }
+  }
+}
