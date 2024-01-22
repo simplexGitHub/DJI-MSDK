@@ -245,10 +245,20 @@
             "id": "974yy9bypgtkf"
           },
           "required": [
-            "rtkConnected"
+            "rtkConnected",
+            "rtkConnected - copy"
           ],
           "properties": {
             "rtkConnected": {
+              "type": "integer",
+              "x-stoplight": {
+                "id": "jxjh4o616zjq0"
+              },
+              "minimum": 0,
+              "maximum": 1,
+              "description": "device conneceted\n"
+            },
+            "rtkConnected - copy": {
               "type": "integer",
               "x-stoplight": {
                 "id": "jxjh4o616zjq0"
@@ -290,12 +300,9 @@
           },
           "type": "string",
           "enum": [
-            "p",
-            "s",
-            "t",
-            "n",
-            "c",
-            "i"
+            "P",
+            "S",
+            "T"
           ]
         },
         "date": {
